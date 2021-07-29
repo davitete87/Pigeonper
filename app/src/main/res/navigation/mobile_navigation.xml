@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_pacientes">
+
+    <fragment
+        android:id="@+id/nav_pacientes"
+        android:name="kennedy.com.Pigeonper.ui.encanastar.AddCanastas"
+        android:label="@string/menu_encanastar"
+        tools:layout="@layout/fragment_encanastar"
+        >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_perfil"
+        android:name="kennedy.com.Pigeonper.ui.gallery.GalleryFragment"
+        android:label="@string/menu_palomas"
+        tools:layout="@layout/fragment_perfil" />
+
+    <fragment
+        android:id="@+id/nav_turnos"
+        android:name="kennedy.com.Pigeonper.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_palomar"
+        tools:layout="@layout/fragment_turnos" />
+</navigation>

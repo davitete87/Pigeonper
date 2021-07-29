@@ -1,0 +1,4 @@
+include ':jgap-examples'
+include ':jgap'
+include ':app'
+rootProject.name = "Pigeonper"

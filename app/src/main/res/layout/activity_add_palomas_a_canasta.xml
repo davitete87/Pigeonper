@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="kennedy.com.Pigeonper.AddPalomasACanasta"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="Escriba punto de suelta:"
+            android:textStyle="bold" />
+
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="Linea"
+            android:textStyle="bold" />
+
+
+        <Spinner
+            android:id="@+id/spinnerLinea"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="10dp"
+            android:text="Nombre de canasta:"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/etNomCanastaEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnFechaCanasta"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:text="Fecha"
+            android:enabled="false"/>
+
+        <EditText
+            android:id="@+id/etFechaCanasta"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:enabled="false"/>
+
+        <Button
+            android:id="@+id/btnHoraCanasta"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:text="Hora"
+            android:enabled="false"/>
+
+        <EditText
+            android:id="@+id/ettHoraCanasta"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btnEditarCanasta"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:background="@drawable/button_rounded"
+            android:text="Editar"
+            android:textColor="#FFFF"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <Button
+            android:id="@+id/btnGuardarCanastaEditada"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:background="@drawable/button_rounded"
+            android:text="Guardar"
+            android:textColor="#FFFF"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:clickable="false"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/idRecyclerPalomasEnCanasta"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:scrollbars="vertical"/>
+
+        <LinearLayout
+            android:id="@+id/loBOTOM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/idbtnEjecutarAG"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_rounded"
+                android:text="Seleccion automatica"
+                android:textColor="#FFFF" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/idbtnAgregarPaloma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/button_rounded"
+                    android:text="Agregar"
+                    android:textColor="#FFFF" />
+
+                <Button
+                    android:id="@+id/idbtnCancelarAddPalomasACanasta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_rounded"
+                    android:text="Cancelar"
+                    android:textColor="#FFFF" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
